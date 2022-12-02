@@ -1,8 +1,9 @@
 import re
+import os
 
 
 EMPTY_LINE_REGEX = r"(?:\r?\n){2,}"
-INPUT_TXT = "input.txt"
+INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
 
 
 def main():
